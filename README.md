@@ -1,29 +1,5 @@
 # Need-help-selenium-Python
 
-I've tried to scrap a website with selenium.
-I dont get all the information I want for the first page (it just gives about the 1st quote aka Einstein).
-Please help me its been a while I'm on it and if I don't get any solution I'm gonna be crazy x)
-
-So, As I said I wanna get the information in this website : https://quotes.toscrape.com/page/1
-
-For every quotes in this page I wanna get :
-- The citation
-- The author
-- The About the author (the link)
-- The tags
-
-after getting all of that stuff I want to organise that like :
-
-Citation     Author    etc...
--            -
--            -
-etc..        etc...
-`your text`
-And then to put them into a csv file.
-
-**Here is my code :**
-
-
 from selenium import webdriver
 from selenium.common.exceptions import ElementNotVisibleException
 from selenium.webdriver.support.ui import WebDriverWait
@@ -113,9 +89,3 @@ else:
 
 
 driver.quit()
-
-And here is what i get when i run my code :
-
-{"citation": "\u201cThe world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.\u201d", "author": ["Albert Einstein", "Albert Einstein", "Albert Einstein", "Albert Einstein", "Albert Einstein", "Albert Einstein", "Albert Einstein", "Albert Einstein", "Albert Einstein", "Albert Einstein"], "tags": ["https://quotes.toscrape.com/author/Albert-Einstein", "https://quotes.toscrape.com/author/Albert-Einstein", "https://quotes.toscrape.com/author/Albert-Einstein", "https://quotes.toscrape.com/author/Albert-Einstein", "https://quotes.toscrape.com/author/Albert-Einstein", "https://quotes.toscrape.com/author/Albert-Einstein", "https://quotes.toscrape.com/author/Albert-Einstein", "https://quotes.toscrape.com/author/Albert-Einstein", "https://quotes.toscrape.com/author/Albert-Einstein", "https://quotes.toscrape.com/author/Albert-Einstein"], "a propos de l'auteur": ["change", "change", "change", "change", "change", "change", "change", "change", "change", "change"]}
-
-Help me pls ;(
